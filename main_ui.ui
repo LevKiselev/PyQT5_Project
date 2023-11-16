@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>840</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>840</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Puzzles v1.0</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>5</y>
+      <width>820</width>
+      <height>740</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::North</enum>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget::Rounded</enum>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab_start">
+     <attribute name="title">
+      <string>Старт</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_numbers">
+     <property name="contextMenuPolicy">
+      <enum>Qt::CustomContextMenu</enum>
+     </property>
+     <attribute name="title">
+      <string>Угадай число</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_picture">
+     <attribute name="title">
+      <string>Открой картинку</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_knight">
+     <attribute name="title">
+      <string>Ход конем</string>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>840</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_choice">
+    <property name="title">
+     <string>Выбор</string>
+    </property>
+    <addaction name="action_start"/>
+    <addaction name="action_numbers"/>
+    <addaction name="action_picture"/>
+    <addaction name="action_knight"/>
+    <addaction name="separator"/>
+    <addaction name="action_exit"/>
+   </widget>
+   <widget class="QMenu" name="menu_info">
+    <property name="title">
+     <string>Информация</string>
+    </property>
+    <addaction name="action_about"/>
+    <addaction name="separator"/>
+    <addaction name="action_rules_numbers"/>
+    <addaction name="action_rules_picture"/>
+    <addaction name="action_rules_knight"/>
+    <addaction name="separator"/>
+    <addaction name="action_userlist"/>
+   </widget>
+   <addaction name="menu_choice"/>
+   <addaction name="menu_info"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </widget>
+  <action name="action_numbers">
+   <property name="text">
+    <string>Угадай число</string>
+   </property>
+  </action>
+  <action name="action_picture">
+   <property name="text">
+    <string>Открой картинку</string>
+   </property>
+  </action>
+  <action name="action_knight">
+   <property name="text">
+    <string>Ход конем</string>
+   </property>
+  </action>
+  <action name="action_exit">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::QuitRole</enum>
+   </property>
+  </action>
+  <action name="action_about">
+   <property name="text">
+    <string>О программе</string>
+   </property>
+  </action>
+  <action name="action_rules_numbers">
+   <property name="text">
+    <string>Правила игры &quot;Угадай число&quot;</string>
+   </property>
+  </action>
+  <action name="action_rules_picture">
+   <property name="text">
+    <string>Правила игры &quot;Открой картинку&quot;</string>
+   </property>
+  </action>
+  <action name="action_rules_knight">
+   <property name="text">
+    <string>Правила игры &quot;Ход конем&quot;</string>
+   </property>
+  </action>
+  <action name="action_start">
+   <property name="text">
+    <string>Старт</string>
+   </property>
+  </action>
+  <action name="action_userlist">
+   <property name="text">
+    <string>Список игроков</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>action_exit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>402</x>
+     <y>328</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

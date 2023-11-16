@@ -1,0 +1,16 @@
+<RCC>
+  <qresource prefix="pics">
+    <file>pics/picture/pic5.jpg</file>
+    <file>pics/picture/pic6.jpg</file>
+    <file>pics/picture/pic7.jpg</file>
+    <file>pics/picture/pic8.jpg</file>
+    <file>pics/picture/pic9.jpg</file>
+    <file>pics/picture/pic10.jpg</file>
+    <file>pics/knight/pic5.jpg</file>
+    <file>pics/knight/pic6.jpg</file>
+    <file>pics/knight/pic7.jpg</file>
+    <file>pics/knight/pic8.jpg</file>
+    <file>pics/knight/pic9.jpg</file>
+    <file>pics/knight/pic10.jpg</file>
+  </qresource>
+</RCC>
